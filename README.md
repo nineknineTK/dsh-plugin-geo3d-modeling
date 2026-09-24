@@ -9,10 +9,12 @@
 ## 安装
 
 ```bash
-dsh plugin --profile web add dsh-plugin-geo3d-modeling
-# 或从 GitHub 安装
-dsh plugin --profile web add github:<your-name>/dsh-plugin-geo3d-modeling
+dsh plugin --profile web add github:nineknineTK/dsh-plugin-geo3d-modeling
 ```
+
+> 上架插件市场后，也可在市场的可视化界面中一键安装（技能包分类）。
+> npm 包名 `dsh-plugin-geo3d-modeling` 预留，npm 发布后同样支持：
+> `dsh plugin --profile web add dsh-plugin-geo3d-modeling`
 
 安装后会话中出现 **`geo3d-modeling`** skill：模型在遇到地质建模 / 地震资料处理任务时自动加载，
 也可以手动 `/skill geo3d-modeling` 调用。
