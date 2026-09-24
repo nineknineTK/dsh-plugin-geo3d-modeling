@@ -1,12 +1,12 @@
 ---
 name: geo3d-modeling
-description: "Geological 3D modeling and 3D seismic data processing full workflow: SEG-Y volume parsing, horizon/fault interpretation file parsing, CGCS2000 coordinate unification (zone-prefix restoration), raw data organization, fault surface modeling, fault representative line and exploration boundary shapefile output, multi-mine 3D geology platform building and leadership report delivery."
-whenToUse: "地质三维建模任务：处理 SEG-Y 地震数据体、层位/断层解释文件（UDF/P701/FLT）、勘探范围边界；坐标系转换与带号恢复；原始数据分类整理；生成带坐标系的断层线/勘探范围 shp；搭建多矿区三维地质平台；撰写领导汇报稿。"
+description: "Geological 3D modeling and 3D seismic data processing full workflow: SEG-Y volume parsing, horizon/fault interpretation file parsing, CGCS2000 coordinate unification (zone-prefix restoration), raw data organization, fault surface modeling, fault representative line and exploration boundary shapefile output, and multi-mine 3D geology platform building."
+whenToUse: "地质三维建模任务：处理 SEG-Y 地震数据体、层位/断层解释文件（UDF/P701/FLT）、勘探范围边界；坐标系转换与带号恢复；原始数据分类整理；生成带坐标系的断层线/勘探范围 shp；搭建多矿区三维地质平台。"
 ---
 
 # 地质三维建模与三维地震资料处理全流程（geo3d-modeling）
 
-本 skill 沉淀了一套经过真实项目验证的煤田地质三维建模全流程：从三维地震勘探原始数据（SEG-Y、层位、断层解释）出发，经坐标统一、分类整理、三维建模、标准 GIS 成果输出，到多矿区三维平台建设与领导汇报交付。所有格式、参数、坑都是实测值，可直接复用。
+本 skill 沉淀了一套经过真实项目验证的煤田地质三维建模全流程：从三维地震勘探原始数据（SEG-Y、层位、断层解释）出发，经坐标统一、分类整理、三维建模、标准 GIS 成果输出，到多矿区三维平台建设。所有格式、参数、坑都是实测值，可直接复用。
 
 ## 适用场景
 
@@ -14,7 +14,6 @@ whenToUse: "地质三维建模任务：处理 SEG-Y 地震数据体、层位/断
 - 多源原始数据坐标统一（带号恢复）与标准化整理归档
 - 断层面、层位面、数据体、属性体的三维可视化与 B/S 平台建设
 - 向 ArcGIS / MapGIS / QGIS 交付带坐标系的标准 shp 成果
-- 项目方案、建设清单、领导汇报稿的生成
 
 ## 阶段 0：数据资产盘点
 
@@ -223,21 +222,7 @@ for f in faults:
 5. **三维建模模块**：SHP 入库 → 发布服务 → 地图叠加 → 框选区域 → 自动调用建模脚本
 6. **断面数据清洗模块**：人工修改断面并保存（个人保存断面）
 
-多矿区实践：一套平台承载 4 个工作区（主矿区 + 其他矿区目录），各矿区按统一标准化流程接入，发布版统一入口按区切换。**任何汇报/文档必须按“队级平台、多工作区”口径写，不要只写单个矿区。**
-
-## 阶段 7：领导汇报交付
-
-汇报稿结构模板（七个部分）：
-
-1. 项目概述（队级统一平台、多工作区，避免“一区一系统”）
-2. 建设清单概览（模块功能表 + 单价待定价说明）
-3. 已完成的成功工作流程（按流程写：数据接入解析 → 坐标统一整理 → 三维建模 → 平台功能落地 → 多区统一发布；每段先讲“标准化流程、多区验证”）
-4. 技术亮点（多工作区统一框架 / 全流程贯通 / 多源数据融合 / 标准 GIS 成果）
-5. 投资概算（单价待询价回填）
-6. 下一步工作计划
-7. 恳请领导指示
-
-生成 Word 版：python-docx，标题黑体、正文宋体 12pt、首行缩进 2 字符（Pt(24)）、`w:eastAsia` 字体设置。
+多矿区实践：一套平台承载 4 个工作区（主矿区 + 其他矿区目录），各矿区按统一标准化流程接入，发布版统一入口按区切换。
 
 ## 坑与教训（实战 checklist）
 

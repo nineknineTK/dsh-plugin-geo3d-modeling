@@ -1,7 +1,7 @@
 {
   "name": "dsh-plugin-geo3d-modeling",
   "version": "0.1.0",
-  "description": "地质三维建模与三维地震资料处理全流程 skill（geo3d-modeling）：SEG-Y 数据体解析、层位/断层解释数据解析、CGCS2000 坐标统一（带带号）、原始数据分类整理、断层面建模、断层代表线与勘探范围 shp 输出、多矿区三维地质平台与领导汇报交付。",
+  "description": "地质三维建模与三维地震资料处理全流程 skill（geo3d-modeling）：SEG-Y 数据体解析、层位/断层解释数据解析、CGCS2000 坐标统一（带带号）、原始数据分类整理、断层面建模、断层代表线与勘探范围 shp 输出、多矿区三维地质平台。",
   "type": "module",
   "main": "lib/index.js",
   "files": [

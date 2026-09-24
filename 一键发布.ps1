@@ -1,4 +1,4 @@
-﻿# 一键发布 dsh-plugin-geo3d-modeling（双击或右键"使用 PowerShell 运行"）
+# 一键发布 dsh-plugin-geo3d-modeling（双击或右键"使用 PowerShell 运行"）
 # 前置：已安装 GitHub CLI 并登录一次（gh auth login），或手动在 GitHub 网页建好空仓库。
 $ErrorActionPreference = "Stop"
 $repo = "nineknineTK/dsh-plugin-geo3d-modeling"
@@ -52,8 +52,8 @@ Write-Host @'
   "url": "https://github.com/nineknineTK/dsh-plugin-geo3d-modeling",
   "category": "skill",
   "description": {
-    "en": "Geological 3D modeling and 3D seismic data processing full workflow skill: SEG-Y volume parsing, horizon/fault interpretation parsing, CGCS2000 coordinate unification (zone-prefix restoration), raw data organization, fault surface modeling, fault representative line and exploration boundary shapefile output, multi-mine 3D geology platform and leadership reporting.",
-    "zh": "地质三维建模与三维地震资料处理全流程 skill：SEG-Y 数据体解析、层位/断层解释解析、CGCS2000 坐标统一（带带号）、原始数据分类整理、断层面建模、断层代表线与勘探范围 shp 输出、多矿区三维地质平台与领导汇报交付。"
+    "en": "Geological 3D modeling and 3D seismic data processing full workflow skill: SEG-Y volume parsing, horizon/fault interpretation parsing, CGCS2000 coordinate unification (zone-prefix restoration), raw data organization, fault surface modeling, fault representative line and exploration boundary shapefile output, multi-mine 3D geology platform.",
+    "zh": "地质三维建模与三维地震资料处理全流程 skill：SEG-Y 数据体解析、层位/断层解释解析、CGCS2000 坐标统一（带带号）、原始数据分类整理、断层面建模、断层代表线与勘探范围 shp 输出、多矿区三维地质平台。"
   },
   "npm": null,
   "install": "dsh plugin --profile web add github:nineknineTK/dsh-plugin-geo3d-modeling"

@@ -32,7 +32,7 @@ console.log('  description =', (list[0]?.description ?? '').slice(0, 60) + '…'
 const got = await provider.get({ name: 'geo3d-modeling' });
 if (!got) throw new Error('get() 返回空');
 console.log('get(): content', got.content.length, '字符');
-for (const kw of ['阶段 1', '阶段 2', '阶段 5', '阶段 6', '阶段 7', 'EPSG', '0x4D', '坑与教训']) {
+for (const kw of ['阶段 1', '阶段 2', '阶段 5', '阶段 6', 'EPSG', '0x4D', '坑与教训']) {
   if (!got.content.includes(kw)) throw new Error('SKILL.md 缺少关键内容: ' + kw);
 }
 const wrong = await provider.get({ name: 'other' });
