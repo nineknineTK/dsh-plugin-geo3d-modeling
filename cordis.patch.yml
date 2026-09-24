@@ -1,0 +1,5 @@
+# dsh-plugin-geo3d-modeling bundle declaration: insert into the host
+# composite's dsh-plugin-geo3d-modeling plugin line.
+- insert:
+    - id: dsh-plugin-geo3d-modeling
+      name: dsh-plugin-geo3d-modeling
